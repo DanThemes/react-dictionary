@@ -5,7 +5,7 @@ import Header from './components/Header';
 import './app.css';
 
 const App = () => {
-    const [word, setWord] = useState('star');
+    const [word, setWord] = useState('');
     const [wordData, setWordData] = useState({});
 
     useEffect(() => {

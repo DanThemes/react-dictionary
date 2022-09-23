@@ -39,7 +39,8 @@ const Content = ({ wordData }) => {
         <div className="container">
             <h4>Results:</h4>
             <div className="content">
-                {wordData.map((word, idx) => {
+                {typeof wordData == 'string' && <p>{wordData}</p>}
+                {typeof wordData == 'object' && wordData.map((word, idx) => {
                     return (
                         <div key={idx} className="wordWrapper">
                             <div>

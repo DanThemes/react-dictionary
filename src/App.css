@@ -24,8 +24,15 @@ header {
 }
 header form {
     display: flex;
-    gap: 2rem;
+    gap: 1rem 2rem;
+    flex-wrap: wrap;
 }
+.errorMessage {
+    flex-basis: 100%;
+    color: #cd2525;
+    font-weight: bold;
+}
+
 header form input[type="text"] {
     flex: 1;
     background: #fff;
