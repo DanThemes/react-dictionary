@@ -21,11 +21,9 @@ const App = () => {
     }, [word])
 
     return (
-        wordData.length &&
-        <div>
-            {console.log(wordData)}
+        <div className="wrapper">
             <Header setWord={setWord} />
-            <Content wordData={wordData} />
+            {wordData.length && <Content wordData={wordData} />}
         </div>
     )
 }
